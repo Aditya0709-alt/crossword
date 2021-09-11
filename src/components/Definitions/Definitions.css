@@ -1,0 +1,49 @@
+.meanings {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  height: 55vh;
+  border: 10px solid rgb(105, 105, 105);
+  border-radius: 10px;
+  padding: 10px 20px;
+  overflow-x: scroll;
+}
+
+.subTitle {
+  width: 9.5ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Glory", sans-serif;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 900px) {
+  .meanings {
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+.single-mean {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
